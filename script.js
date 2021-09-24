@@ -15,11 +15,13 @@ function countWord(){
     let consonants = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z']
     let counterVowels = 0
     let counterConsonants = 0
+    let countWords = 0
     let temp
     for(let j=0; j<words.length;j++){
         temp = words[j]
         if(words[j] != ''){
-            wordCount.innerHTML = words[j].length;
+            countWords++
+            wordCount.innerHTML = countWords;
         }
         for(let i=0; i<temp.length;i++){
             for(let k=0; k<vowels.length;k++){
